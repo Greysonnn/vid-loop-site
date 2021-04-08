@@ -13,7 +13,8 @@
       <h2 class="logo">Planes</h2>
       <div class="toggle"></div>
     </header>
-
+ <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
     <video src="media/plane-loop-video.mp4" muted loop autoplay>
 
     </video>
@@ -32,9 +33,9 @@
     </div>
 
     <ul class="social">
-      <li><img src="media/facebook.png" alt="facebook"></li>
-      <li><img src="media/twitter.png" alt="facebook"></li>
-      <li><img src="media/instagram.png" alt="facebook"></li>
+      <li><a href="#"><img src="media/facebook.png" alt="facebook"></a></li>
+      <li><a href="#"><img src="media/twitter.png" alt="facebook"></a></li>
+      <li><a href="#"><img src="media/instagram.png" alt="facebook"></a></li>
     </ul>
 
   </section>
@@ -48,5 +49,15 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () =>{
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
 </body>
 </html>
