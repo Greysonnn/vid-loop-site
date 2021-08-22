@@ -4,15 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>About</title>
 </head>
-  
 <body>
-  <section>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Portfolio</h2>
+      <script src="https://tryhackme.com/badge/274114"></script>
+      <div class="toggle"></div>
+    </header>
+ <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+    <video src="media/hex-motions.mp4" muted loop autoplay>
+
+    </video>
+   
+    
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Cybersecurity</h2>
+      <h3>Web Development</h3>
+      <p>This page is under construction</p>
+        <a href="#">Explore</a>
+    </div>
+
+    <ul class="social">
+      <li><a href="#"><img src="media/facebook.png" alt="facebook"></a></li>
+      <li><a href="#"><img src="media/twitter.png" alt="facebook"></a></li>
+      <li><a href="#"><img src="media/instagram.png" alt="facebook"></a></li>
+    </ul>
+
   </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () =>{
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
 </body>
-  
 </html>
-
-
